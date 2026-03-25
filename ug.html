@@ -1,0 +1,774 @@
+<!doctype html>
+<html class="no-js" lang="zxx" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>KRL Education - Distance Programs</title>
+  <meta name="author" content="KRL Education">
+  <meta name="description" content="KRL Education - Distance Programs HTML Template">
+  <meta name="keywords" content="KRL Education - University Education HTML Template">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* ── Anchor scroll offset for sticky header ── */
+    [id] {
+      scroll-margin-top: 100px;
+    }
+
+    /* ══════════════════════════════════════════
+       PROGRAM TABLES
+    ══════════════════════════════════════════ */
+    .program-tables-container {
+      padding: 60px 0;
+    }
+
+    .program-tables-container .section {
+      margin-bottom: 60px;
+    }
+
+    .program-tables-container .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .program-tables-container .section-tag {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .tag-ug {
+      background: rgba(0,0,0,0.05);
+      color: #f7876f;
+      border: 1px solid rgba(247,135,111,0.35);
+    }
+
+    .tag-pg {
+      background: rgba(0,0,0,0.05);
+      color: #6fc3f7;
+      border: 1px solid rgba(111,195,247,0.35);
+    }
+
+    .program-tables-container .section-title {
+      font-family: var(--title-font);
+      font-size: clamp(20px, 3vw, 30px);
+      margin: 0;
+      color: var(--title-color);
+    }
+
+    .program-tables-container .table-wrapper {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border-color, #e5e7eb);
+    }
+
+    .program-tables-container table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      min-width: 600px;
+      text-align: left;
+    }
+
+    .program-tables-container thead tr {
+      background: var(--theme-color, #7c3aed);
+    }
+
+    .program-tables-container thead th {
+      padding: 15px 16px;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .program-tables-container tbody tr {
+      border-bottom: 1px solid #eaeaea;
+      transition: background 0.15s;
+      background: #fff;
+    }
+
+    .program-tables-container tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .program-tables-container tbody tr:hover {
+      background: #f9f9f9;
+    }
+
+    .program-tables-container tbody td {
+      padding: 13px 16px;
+      vertical-align: middle;
+      line-height: 1.5;
+      color: var(--body-color, #555);
+    }
+
+    .program-tables-container .sno {
+      color: #888;
+      font-size: 13px;
+      width: 48px;
+      font-weight: 600;
+    }
+
+    /* Empty-cell placeholder */
+    .program-tables-container tbody td.empty-cell {
+      color: #bbb;
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    /* Jump links bar */
+    .jump-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .jump-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 13.5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .jump-links a:hover {
+      opacity: 0.82;
+      text-decoration: none;
+    }
+
+    .jump-links .jl-ug {
+      background: rgba(247,135,111,0.12);
+      color: #e0643a;
+      border: 1px solid rgba(247,135,111,0.3);
+    }
+
+    .jump-links .jl-pg {
+      background: rgba(111,195,247,0.12);
+      color: #2a8ec9;
+      border: 1px solid rgba(111,195,247,0.3);
+    }
+
+    @media (max-width: 576px) {
+      .wp-number { display: none !important; }
+      .wp-btn { padding: 18px 20px !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── Preloader ── -->
+  <div class="preloader">
+    <button class="th-btn preloaderCls">Cancel Preloader</button>
+    <div class="preloader-inner">
+      <img src="assets/img/logo-icon.svg" alt="img">
+      <span class="loader">KRL Education <span class="loading-text">KRL Education</span></span>
+    </div>
+  </div>
+
+  <!-- ── Side Menu ── -->
+  <div class="sidemenu-wrapper">
+    <div class="sidemenu-content">
+      <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+      <div class="widget footer-widget">
+        <div class="th-widget-about">
+          <div class="about-logo">
+            <a href="index.html"><img class="desktop-sidebar-logo" src="assets/img/logo.png"
+                style="max-width:160px;height:auto;" alt="KRL Education"></a>
+          </div>
+          <p class="about-text">Since 1999, when the newly minted KRL Education team embraced its mandate to breathe
+            new life into the downtrodden neighbourhood, East Village's transformation has been nothing short of
+            remarkable.</p>
+          <div class="footer-info">
+            <a href="#"><span class="footer-info-icon"><i class="fa-solid fa-location-dot"></i></span>
+              KRL Group, Opp. New Bus Stand Service Road, Jind, Haryana</a>
+            <a href="mailto:info@krleducation.com"><span class="footer-info-icon"><i
+                    class="fa-solid fa-envelope"></i></span>info@krleducation.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="th-menu-wrapper">
+    <div class="th-menu-area text-center">
+      <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+      <div class="mobile-logo"><a href="index.html"><img src="assets/img/logo.png" alt="KRL Education"></a></div>
+      <div class="th-mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="menu-item-has-children"><a href="program-regular.html">Regular Courses</a>
+            <ul class="sub-menu">
+              <li><a href="program-diploma.html">Diploma</a></li>
+              <li><a href="program-regular.html#undergraduate">UG</a></li>
+              <li><a href="program-regular.html#postgraduate">PG</a></li>
+              <li><a href="program-pg-diploma.html">PG Diploma</a></li>
+              <li><a href="program-online.html">Online</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children"><a href="program-distance.html">Distance Courses</a>
+            <ul class="sub-menu">
+              <li><a href="ug.html">UG Programmes</a></li>
+              <li><a href="ug.html">PG Programmes</a></li>
+            </ul>
+          </li>
+          <li><a href="program-distance.html">ODL</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header class="th-header header-layout1">
+    <div class="header-info d-none d-sm-block">
+      <div class="container th-container2">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="header-logo"><a href="index.html"><img src="assets/img/logo.png" alt="KRL Education"></a></div>
+          </div>
+          <div class="col-auto">
+            <div class="header-info-right">
+              <div class="header-info-item">
+                <div class="header-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="header-info-content">
+                  <span class="header-info-text">Address</span>
+                  <h3 class="header-info-title"><a href="#">KRL Group, Opp. New Bus Stand Service Road, Jind,
+                      Haryana</a></h3>
+                </div>
+              </div>
+              <div class="header-info-item">
+                <div class="header-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="header-info-content">
+                  <span class="header-info-text">Email</span>
+                  <h3 class="header-info-title"><a href="mailto:info@krleducation.com">info@krleducation.com</a></h3>
+                </div>
+              </div>
+              <div class="header-info-item">
+                <div class="header-info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="header-info-content">
+                  <span class="header-info-text">Phone Number</span>
+                  <h3 class="header-info-title"><a href="tel:+918950594087">+91 89505 94087</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky-wrapper">
+      <div class="menu-area">
+        <div class="container th-container2">
+          <div class="menu-wrapp">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
+                <div class="header-left d-flex align-items-center">
+                  <div class="header-logo d-block d-sm-none">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="KRL Education"></a>
+                  </div>
+                  <div class="header-button d-none d-sm-block">
+                    <a href="contact.html" class="th-btn">Get More Info
+                      <img src="assets/img/icon/right-icon.svg" class="th-arrow" alt="icon"></a>
+                  </div>
+
+                  <!-- Desktop Nav -->
+                  <nav class="main-menu d-none d-xl-block">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="program-regular.html">Regular Courses</a></li>
+                      <li class="menu-item-has-children"><a href="#">Distance Courses</a>
+                        <ul class="sub-menu">
+                          <li><a href="program-diploma.html">Diploma</a></li>
+                          <li class="menu-item-has-children">
+                            <a href="ug.html">UG <span class="arrow-icon"></span></a>
+                            <ul class="sub-menu">
+                              <li><a href="ug.html">Bachelor Of Arts</a></li>
+                              <li><a href="ug.html">Bachelor Of Arts – JMC</a></li>
+                              <li><a href="ug.html">Bachelor Of Library And Information Sciences</a></li>
+                              <li><a href="ug.html">Bachelor Of Business Administration</a></li>
+                              <li><a href="ug.html">Bachelor Of Commerce</a></li>
+                              <li><a href="ug.html">Bachelor Of Commerce (Honors)</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu-item-has-children">
+                            <a href="ug.html">PG <span class="arrow-icon"></span></a>
+                            <ul class="sub-menu">
+                              <li><a href="ug.html">Master Of Business Administration</a></li>
+                              <li><a href="ug.html">Master Of Arts</a></li>
+                              <li><a href="ug.html">Master Of Library And Information Sciences</a></li>
+                              <li><a href="ug.html">MA Home Science</a></li>
+                              <li><a href="ug.html">MA Journalism And Mass Communication</a></li>
+                              <li><a href="ug.html">Master Of Commerce</a></li>
+                              <li><a href="ug.html">MA Public Administration</a></li>
+                              <li><a href="ug.html">MA Buddhist Studies</a></li>
+                              <li><a href="ug.html">MA Education</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="program-pg-diploma.html">PG Diploma</a></li>
+                          <li><a href="program-online.html">Online</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="program-distance.html">ODL</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="col-auto ms-lg-auto">
+                <div class="header-button">
+                  <a href="https://wa.me/919812094087" target="_blank" class="whatsapp-nav-btn wp-btn"
+                    style="display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;background:#25D366;padding:7px 16px;border-radius:6px;font-weight:600;font-size:15px;margin-right:12px;">
+                    <i class="fab fa-whatsapp" style="font-size:20px;"></i>
+                    <span class="wp-number">+91 98120 94087</span>
+                  </a>
+                  <a href="#" class="icon-btn sideMenuToggler d-none d-xl-block">
+                    <img src="assets/img/icon/grid2.svg" alt="">
+                  </a>
+                  <button type="button" class="th-menu-toggle d-inline-block d-xl-none">
+                    <i class="far fa-bars"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Breadcrumb ── -->
+  <div class="breadcumb-wrapper position-relative" data-bg-src="assets/img/shape/breadcrumb-shep.png">
+    <div class="breadcumb-banner"><img src="assets/img/breadcrumb/breadcumb-banner.png" alt="bg-banner"></div>
+    <div class="breadcumb-shape"><img src="assets/img/shape/triangle-light.png" alt="shape" class="jump"></div>
+    <div class="container th-container4">
+      <div class="row">
+        <div class="col-xxl-5">
+          <div class="breadcumb-content">
+            <h1 class="breadcumb-title">UG / PG Programs</h1>
+            <ul class="breadcumb-menu">
+              <li><a href="index.html">Home</a></li>
+              <li>UG / PG Programs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PROGRAM TABLES
+  ══════════════════════════════════════════ -->
+  <div class="program-tables-container">
+    <div class="container th-container4">
+
+      
+
+      <!-- ════════════ UG TABLE ════════════ -->
+      <div class="section" id="undergraduate">
+        <div class="section-header">
+          <span class="section-tag tag-ug">Undergraduate</span>
+          <h2 class="section-title">UG Distance Programmes</h2>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th class="sno">#</th>
+                <th>Programme Title</th>
+                <th>Level</th>
+                <th>Degree Type</th>
+                <th>Duration</th>
+                <th>Eligibility</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sno">1</td>
+                <td>Bachelor Of Arts</td>
+                <td>UG</td>
+                <td>UG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">2</td>
+                <td>Bachelor Of Arts – JMC</td>
+                <td>UG</td>
+                <td>UG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">3</td>
+                <td>Bachelor Of Library And Information Sciences</td>
+                <td>UG</td>
+                <td>UG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">4</td>
+                <td>Bachelor Of Business Administration</td>
+                <td>UG</td>
+                <td>UG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">5</td>
+                <td>Bachelor Of Commerce</td>
+                <td>UG</td>
+                <td>UG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">6</td>
+                <td>Bachelor Of Commerce (Honors)</td>
+                <td>UG</td>
+                <td>UG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- end UG -->
+
+      <!-- ════════════ PG TABLE ════════════ -->
+      <div class="section" id="postgraduate">
+        <div class="section-header">
+          <span class="section-tag tag-pg">Postgraduate</span>
+          <h2 class="section-title">PG Distance Programmes</h2>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th class="sno">#</th>
+                <th>Programme Title</th>
+                <th>Level</th>
+                <th>Degree Type</th>
+                <th>Duration</th>
+                <th>Eligibility</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sno">1</td>
+                <td>Master Of Business Administration</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">2</td>
+                <td>Master Of Arts</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">3</td>
+                <td>Master Of Library And Information Sciences</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">4</td>
+                <td>MA Home Science</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">5</td>
+                <td>MA Journalism And Mass Communication</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">6</td>
+                <td>Master Of Commerce</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">7</td>
+                <td>MA Public Administration</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">8</td>
+                <td>MA Buddhist Studies</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+              <tr>
+                <td class="sno">9</td>
+                <td>MA Education</td>
+                <td>PG</td>
+                <td>PG Degree</td>
+                <td class="empty-cell">—</td>
+                <td class="empty-cell">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- end PG -->
+
+    </div>
+  </div>
+
+  <!-- ── Marquee ── -->
+  <div class="marquee-area space-bottom overflow-hidden">
+    <div class="container-fluid p-0">
+      <div class="swiper th-slider marquee-slider1"
+        data-slider-options='{"breakpoints":{"0":{"slidesPerView":"auto"}},"autoplay":{"delay":0,"disableOnInteraction":false},"noSwiping":"true","speed":10000,"spaceBetween":40}'>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="marquee-card">
+              <div class="color-masking"><img src="assets/img/icon/open-book.svg" alt="icon"></div>
+              <a target="_blank" href="#">CREATION</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="marquee-card">
+              <div class="color-masking"><img src="assets/img/icon/scollarship.svg" alt="icon"></div>
+              <a target="_blank" href="#">DISCOVER</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="marquee-card">
+              <div class="color-masking"><img src="assets/img/icon/open-book.svg" alt="icon"></div>
+              <a target="_blank" href="#">INNOVATE</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="marquee-card">
+              <div class="color-masking"><img src="assets/img/icon/open-book.svg" alt="icon"></div>
+              <a target="_blank" href="#">EDUCATION</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="marquee-card">
+              <div class="color-masking"><img src="assets/img/icon/scollarship.svg" alt="icon"></div>
+              <a target="_blank" href="#">CASE STUDIES</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="marquee-card">
+              <div class="color-masking"><img src="assets/img/icon/open-book.svg" alt="icon"></div>
+              <a target="_blank" href="#">DISTANCE ODL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer-wrapper footer-default footer-overlay" data-bg-src="assets/img/bg/footer-bg-1.jpg">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-40 align-items-center justify-content-between">
+          <div class="col-xl-auto">
+            <div class="footer-logo z-index-common" data-cue="slideInLeft">
+              <a href="index.html"><img src="assets/img/logo.png" alt="KRL Education"></a>
+            </div>
+          </div>
+          <div class="col-xl-auto">
+            <div class="client-group-wrap z-index-common" data-cue="slideInRight">
+              <img src="assets/img/normal/client-group1.png" alt="img">
+              <h4 class="title">Have any question?
+                <a href="contact.html">
+                  <img src="assets/img/icon/chat2.svg" alt="">
+                  <span class="text-theme">Live</span>
+                </a> chat now
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="widget-area">
+        <div class="row justify-content-between">
+          <div class="col-md-6 col-xl-auto">
+            <div class="widget footer-widget">
+              <div class="th-widget-about">
+                <h3 class="widget_title">About KRL Education</h3>
+                <p class="about-text">KRL Education is a trusted admission consultancy helping students secure seats
+                  in top universities and colleges across India. With expert guidance, scholarship support and
+                  personalized counseling, we simplify your higher education journey.</p>
+                <div class="footer-info">
+                  <a href="#">
+                    <span class="footer-info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    KRL Group, Opp. New Bus Stand Service Road, Jind, Haryana
+                  </a>
+                  <a href="mailto:info@krleducation.com">
+                    <span class="footer-info-icon"><i class="fa-solid fa-envelope"></i></span>
+                    info@krleducation.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-auto">
+            <div class="widget widget_nav_menu footer-widget">
+              <h3 class="widget_title">Useful Links</h3>
+              <div class="menu-all-pages-container">
+                <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="program-diploma.html">Diploma Programs</a></li>
+                  <li><a href="program-pg-diploma.html">PG Diploma</a></li>
+                  <li><a href="program-distance.html">Distance (ODL)</a></li>
+                  <li><a href="program-online.html">Online Programs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-auto">
+            <div class="widget widget_nav_menu footer-widget">
+              <h3 class="widget_title">Our Programs</h3>
+              <div class="menu-all-pages-container">
+                <ul class="menu">
+                  <li><a href="program-diploma.html">Diploma</a></li>
+                  <li><a href="program-pg-diploma.html">PG Diploma</a></li>
+                  <li><a href="program-distance.html">Distance (ODL)</a></li>
+                  <li><a href="program-regular.html">Regular Programs</a></li>
+                  <li><a href="program-online.html">Online Programs</a></li>
+                  <li><a href="ug.html">UG Distance</a></li>
+                  <li><a href="ug.html">PG Distance</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-auto">
+            <div class="widget th-widget-instagram footer-widget">
+              <h3 class="widget_title">Instagram</h3>
+              <div class="instagram-feeds">
+                <div class="insta-thumb"><img src="assets/img/widget/insta-feed-1-1.jpg" alt="Image">
+                  <a href="assets/img/widget/insta-feed-1-1.jpg" class="insta-btn popup-image"><i
+                      class="fab fa-instagram"></i></a>
+                </div>
+                <div class="insta-thumb"><img src="assets/img/widget/insta-feed-1-2.jpg" alt="Image">
+                  <a href="assets/img/widget/insta-feed-1-2.jpg" class="insta-btn popup-image"><i
+                      class="fab fa-instagram"></i></a>
+                </div>
+                <div class="insta-thumb"><img src="assets/img/widget/insta-feed-1-3.jpg" alt="Image">
+                  <a href="assets/img/widget/insta-feed-1-3.jpg" class="insta-btn popup-image"><i
+                      class="fab fa-instagram"></i></a>
+                </div>
+                <div class="insta-thumb"><img src="assets/img/widget/insta-feed-1-4.jpg" alt="Image">
+                  <a href="assets/img/widget/insta-feed-1-4.jpg" class="insta-btn popup-image"><i
+                      class="fab fa-instagram"></i></a>
+                </div>
+                <div class="insta-thumb"><img src="assets/img/widget/insta-feed-1-5.jpg" alt="Image">
+                  <a href="assets/img/widget/insta-feed-1-5.jpg" class="insta-btn popup-image"><i
+                      class="fab fa-instagram"></i></a>
+                </div>
+                <div class="insta-thumb"><img src="assets/img/widget/insta-feed-1-6.jpg" alt="Image">
+                  <a href="assets/img/widget/insta-feed-1-6.jpg" class="insta-btn popup-image"><i
+                      class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright-wrap z-index-common">
+      <div class="container">
+        <div class="row justify-content-center gy-3 align-items-center">
+          <div class="col-12 d-flex justify-content-center">
+            <p class="copyright-text">
+              <i class="fal fa-copyright"></i> Copyright 2026
+              <a href="index.html">KRL Education</a>. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll top -->
+  <div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        style="transition:stroke-dashoffset 10ms linear 0s;stroke-dasharray:307.919,307.919;stroke-dashoffset:307.919;"></path>
+    </svg>
+  </div>
+
+  <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
